@@ -1,0 +1,173 @@
+{
+    "customers": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "city": "New York",
+            "orders": [
+                {
+                    "id": 1,
+                    "product": "Macbook Pro"
+                },
+                {
+                    "id": 2,
+                    "product": "iPhone"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Jane Doe",
+            "city": "San Francisco",
+            "orders": [
+                {
+                    "id": 3,
+                    "product": "iPad"
+                },
+                {
+                    "id": 4,
+                    "product": "iMac"
+                },
+                {
+                    "id": 5,
+                    "product": "iPod"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "John Smith",
+            "city": "Seattle",
+            "orders": [
+                {
+                    "id": 6,
+                    "product": "Macbook Air"
+                },
+                {
+                    "id": 7,
+                    "product": "iPhone"
+                },
+                {
+                    "id": 8,
+                    "product": "iPod"
+                },
+                {
+                    "id": 9,
+                    "product": "iMac"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Jane Smith",
+            "city": "Los Angeles",
+            "orders": [
+                {
+                    "id": 10,
+                    "product": "Macbook Pro"
+                },
+                {
+                    "id": 11,
+                    "product": "iPhone"
+                },
+                {
+                    "id": 12,
+                    "product": "iPod"
+                },
+                {
+                    "id": 13,
+                    "product": "iMac"
+                },
+                {
+                    "id": 14,
+                    "product": "iPad"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "John Williams",
+            "city": "Chicago",
+            "orders": [
+                {
+                    "id": 15,
+                    "product": "Macbook Pro"
+                },
+                {
+                    "id": 16,
+                    "product": "iPhone"
+                },
+                {
+                    "id": 17,
+                    "product": "iPod"
+                },
+                {
+                    "id": 18,
+                    "product": "iMac"
+                },
+                {
+                    "id": 19,
+                    "product": "iPad"
+                },
+                {
+                    "id": 20,
+                    "product": "Macbook Air"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Jane Williams",
+            "city": "Houston",
+            "orders": [
+                {
+                    "id": 21,
+                    "product": "Macbook Pro"
+                },
+                {
+                    "id": 22,
+                    "product": "iPhone"
+                },
+                {
+                    "id": 23,
+                    "product": "iPod"
+                },
+                {
+                    "id": 24,
+                    "product": "iMac"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "John Brown",
+            "city": "Philadelphia",
+            "orders": [
+                {
+                    "id": 25,
+                    "product": "Macbook Pro"
+                },
+                {
+                    "id": 26,
+                    "product": "iPhone"
+                },
+                {
+                    "id": 27,
+                    "product": "iPod"
+                },
+                {
+                    "id": 28,
+                    "product": "iMac"
+                },
+                {
+                    "id": 29,
+                    "product": "iPad"
+                },
+                {
+                    "id": 30,
+                    "product": "Macbook Air"
+                }
+            ]
+        }
+    ]
+}
