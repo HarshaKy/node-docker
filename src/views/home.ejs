@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head') %>
+
+    <body>
+        <h3><%= message %></h3>
+
+        <ul>
+            <li>
+                <a href="/customers">Get all customers</a>
+            </li>
+            <li>
+                <a href="/customers/1">Get customer with id 1</a>
+            </li>
+            <li>
+                <a href="/customers/1/orders">Get orders made by customer with id 1</a>
+            </li>
+            <li>
+                <a href="/customers/1/orders/1">Get order with id 1 made by customer with id 1</a>
+            </li>
+        </ul>
+
+        <%- include('partials/footer') %>
+    </body>
+
+</html>

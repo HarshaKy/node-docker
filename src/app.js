@@ -1,9 +1,13 @@
 const express = require('express');
 const app = express();
 const db = require('./db/db.json');
+const path = require('path');
+
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
-    res.send('Welcome to my API!');
+    res.render('home', { title: 'Home', message: 'Welcome to my node-docker app!' });
 }
 );
 
