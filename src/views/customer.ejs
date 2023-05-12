@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/header') %>
+
+        <h3>Name: <%= customer.name %></h3>
+        <p>From: <%= customer.city %></p>
+        <p>Orders: </p>
+        <% for (var j = 0; j < customer.orders.length; j++) { %>
+            <p>Order ID: <%= customer.orders[j].id %> || Product Name: <%= customer.orders[j].product %></p>
+        <% } %>
+
+        <%- include('partials/footer') %>
+    </body>
+</html>

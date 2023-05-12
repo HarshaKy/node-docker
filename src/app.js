@@ -11,20 +11,58 @@ app.get('/', (req, res) => {
 }
 );
 
+app.get('/view/customers', (req, res) => {
+    fetch('http://localhost:3000/customers')
+        .then(res => res.json())
+        .then(customers => {
+            res.render('customers', { title: 'Customers', customers: customers });
+        })
+        .catch(err => {
+            res.redirect('/');
+        });
+}
+);
+
 app.get('/customers', (req, res) => {
     res.json(db.customers);
+}
+);
+
+app.get('/view/customers/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    fetch(`http://localhost:3000/customers/${id}`)
+        .then(res => res.json())
+        .then(customer => {
+            res.render('customer', { title: 'Customer', customer: customer });
+        })
+        .catch(err => {
+            res.redirect('/');
+        });
 }
 );
 
 app.get('/customers/:id', (req, res) => {
     const id = parseInt(req.params.id);
     const customer = db.customers.find(customer => customer.id === id);
-    
+
     if (!customer) {
         res.status(404).send('The customer with the given ID was not found.');
         return;
     }
     res.json(customer);
+}
+);
+
+app.get('/view/customers/:id/orders', (req, res) => {
+    const id = parseInt(req.params.id);
+    fetch(`http://localhost:3000/customers/${id}/orders`)
+        .then(res => res.json())
+        .then(orders => {
+            res.render('orders', { title: 'Orders', orders: orders });
+        })
+        .catch(err => {
+            res.redirect('/');
+        });
 }
 );
 
@@ -37,6 +75,20 @@ app.get('/customers/:id/orders', (req, res) => {
         return;
     }
     res.json(customer.orders);
+}
+);
+
+app.get('/view/customers/:id/orders/:orderId', (req, res) => {
+    const id = parseInt(req.params.id);
+    const orderId = parseInt(req.params.orderId);
+    fetch(`http://localhost:3000/customers/${id}/orders/${orderId}`)
+        .then(res => res.json())
+        .then(order => {
+            res.render('order', { title: 'Order', order: order });
+        })
+        .catch(err => {
+            res.redirect('/');
+        });
 }
 );
 
